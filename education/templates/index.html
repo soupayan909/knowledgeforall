@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Learning Portal
+{% endblock %}
+
+{% block main %}
+<form action="/translate" method="post">
+    <div class="mb-3">
+        <h3>Select File</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="file" id="myfile" name="myfile"><br><br>
+        OR<br>
+        <h3>Enter Your Writeup</h3>  
+        <textarea autocomplete="off" autofocus class="form-control mx-auto w-auto" id="text" name="text"  placeholder="Text Content" type="text" rows="10" cols="100"></textarea>   
+    </div>
+    <button class="btn btn-primary" type="submit" name="language" value="hi">Hindi</button>
+    <button class="btn btn-primary" type="submit" name="language" value="bn">Bengali</button>
+</form>
+{% endblock %}
